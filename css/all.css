@@ -1,0 +1,247 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}
+/* CSS */
+body{
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    /* outline: 1px solid green; */
+}
+nav{
+    background-color: #AA0601;
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+.nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 80px;
+}
+.navbar{
+    display: flex;
+}
+.nav-link{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 32px;
+}
+.nav-items:last-child .nav-link{
+    padding-right: 0;
+}
+footer{
+    background-color: #AA0601;
+    color: #fff;
+    padding: 48px 0 32px 0;
+}
+.footer-nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav{
+    display: flex;
+}
+.footer-nav a{
+    padding: 0 24px;
+    color: #fff;
+}
+a.footer-nav-firstlink{
+    padding-left: 0;
+}
+.footer-content{
+    display: flex;
+}
+.footer-content a{
+    display: block;
+    width: 48px;
+}
+.phone,.e-mail{
+    display: flex;
+    align-items: center;
+}
+.contact span,.contact a{
+    font-size: 36px;
+}
+.contact span{
+    margin-right: 27px;
+}
+.contact a{
+    color: #fff;
+
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.policy{
+    display: flex;
+}
+.policy a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 24px;
+}
+.policy:last-child a{
+    padding-right: 0;
+}
+a:hover{
+    color: lemonchiffon;
+}
+a:active{
+    color: lightcoral;
+}
+@media ( max-width: 992px){
+    /* .container{
+        max-width: 960px;
+    } */
+}
+@media ( max-width: 767px){
+    .container{
+        max-width: 720px;
+    }
+    nav{
+        padding-bottom: 0;
+    }
+    .nav-wrap{
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .col-mb-4{
+        width: 100%;
+    }
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .nav-items{
+        width: 50%;
+        border: 1px solid #fff;
+    }
+    .nav-link{
+        text-align: center;
+        padding: 12px 0;
+    }
+    footer{
+        padding: 24px 0 20px 0;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .footer-nav-content{
+        justify-content: flex-end;
+        line-height: 1;
+    }
+    .footer-content a{
+        width: 24px;
+    }
+    ul.mb-md-6{
+        margin-bottom: 24px;
+    }
+    .contact{
+        margin-top: -24px;
+    }
+    .contact span,.contact a{
+        font-size: 16px;
+    }
+    .contact span{
+        margin-right: 10px;
+    }
+    hr.mb-md-6{
+        margin-bottom: 24px;
+    }
+    .copyright{
+        display: block;
+    }
+    .copyright p{
+        margin-bottom: 4px;
+    }
+    .policy{
+        display: block;
+    }
+    .policy a{
+        font-size: 16px;
+        padding: 4px 0;
+    }
+
+}
+
+/* 通用樣式 */
+.col-1{
+    width: 8.3333%;
+}
+.col-2{
+    width: 16.6666%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.3333%;
+}
+.col-5{
+    width: 33.3333%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.3333%;
+}
+.col-8{
+    width: 66.6666%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.3333%;
+}
+.col-11{
+    width: 91.6666%;
+}
+.col-12{
+    width: 100%;
+}
+.mr-8{
+    margin-right: 32px;
+}
+.mb-2{
+    margin-bottom: 8px;
+}
+.mb-8{
+    margin-bottom: 32px;
+}
+
+/*footer至底*/
+html,
+body {
+    height: 100%;
+}
+
+body>footer {
+    position: sticky;
+    top: 100vh;
+}
